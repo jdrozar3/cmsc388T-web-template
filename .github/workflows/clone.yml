@@ -18,6 +18,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-              git clone git@github.com:jdrozar3/cmsc388t_winter21.git https://${{ secrets.HOST }}/~${{ secrets.USERNAME }}/ 
+              git clone
 
      
