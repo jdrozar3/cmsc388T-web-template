@@ -24,4 +24,5 @@ jobs:
               ${{ secrets.PASSWORD }}
               cd ..
               cd pub/
+              cd cmsc388T-web-template/
               git pull
