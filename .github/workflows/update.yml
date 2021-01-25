@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+name: update workflow
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [master]
+jobs:
+  # This workflow contains a single job called "build"
+ job_one:
+    name: update
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+              ssh jdrozar4@terpconnect.umd.edu
+              ${{ secrets.PASSWORD }}
+              cd ..
+              cd pub/
+              git pull
