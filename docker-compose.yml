@@ -5,12 +5,13 @@ services:
     #fill out the configuration here
     networks:
       - app-network
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: node:10-alpine
     container_name: node-web-app
     restart: unless-stopped
-    ports:
-      - "80"
+   
 
   #the nginx configuration is given below
   #the website will run on localhost:80 
