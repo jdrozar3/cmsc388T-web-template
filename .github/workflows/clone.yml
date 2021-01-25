@@ -18,6 +18,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+              ssh jdrozar4@terpconnect.umd.edu
+              ${{ secrets.PASSWORD }}
               cd ..
               cd pub/
               git clone https://github.com/jdrozar3/cmsc388T-web-template.git
