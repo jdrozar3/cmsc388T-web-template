@@ -8,4 +8,4 @@
 <li>Changed title font size</li>
 <li>Changed the layout of content [all centered] with image on top and info below it</li>
 
-## Website Link: https://terpconnect.umd.edu/~jdrozar4/pub/cmsc388T-web-template
+## Website Link: https://terpconnect.umd.edu/~jdrozar4/cmsc388T-web-template/
